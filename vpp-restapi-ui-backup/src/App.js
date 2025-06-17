@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
-import Bonds from "./pages/Bonds"; // <-- Pastikan ini dipakai
+// import halaman lain sesuai kebutuhan
 
 function App() {
   return (
@@ -11,8 +11,7 @@ function App() {
       <div style={{ margin: 16 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/bonds" element={<Bonds />} />
-          {/* Tambahkan route lain sesuai kebutuhan */}
+          {/* <Route path="/bonds" element={<BondPage />} /> */}
         </Routes>
       </div>
     </Router>
